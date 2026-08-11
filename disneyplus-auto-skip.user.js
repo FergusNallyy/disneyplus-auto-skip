@@ -1,12 +1,16 @@
 // ==UserScript==
 // @name         Disney+ Auto Skip
-// @namespace    local.fergu
+// @author FergusNallyy
 // @version      3.5
 // @description  Auto-clicks SKIP INTRO / RECAP / CREDITS and Up Next; enlarges captions
 // @match        https://www.disneyplus.com/*
 // @match        https://*.disneyplus.com/*
 // @run-at       document-idle
 // @grant        none
+// @namespace    https://github.com/fergusnallyy/disneyplus-auto-skip
+// @updateURL     https://raw.githubusercontent.com/fergusnallyy/disneyplus-auto-skip/main/disneyplus-auto-skip.user.js
+// @downloadURL   https://raw.githubusercontent.com/fergusnallyy/disneyplus-auto-skip/main/disneyplus-auto-skip.user.js
+// @license MIT
 // ==/UserScript==
 
 (() => {
@@ -18,7 +22,7 @@
     skipCredits: true,
     autoNextEpisode: true,
     nextEpisodeWindow: 180, // fallback only, when no countdown can be read
-    subtitleScale: 1.3,     // multiplier, not px: the renderer sizes cues from the
+    subtitleScale: 1.2,     // multiplier, not px: the renderer sizes cues from the
                             // video height, so em scales correctly in fullscreen.
                             // null to leave captions alone.
     autoFullscreen: true,   // fullscreen on your first real click/keypress
